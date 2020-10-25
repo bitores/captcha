@@ -1,0 +1,46 @@
+{
+  "name": "captcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/es/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build",
+    "prepublish": "rollup -c"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "log": [],
+  "Keywords": [
+    "react",
+    "form",
+    "captch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitores/captcha.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "bitores",
+  "email": "huangzhengjie@dingtalk.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitores/captcha/issues"
+  },
+  "homepage": "https://github.com/bitores/captcha#readme"
+}
